@@ -1,38 +1,40 @@
-.App {
+.FormMovie {
+  width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.FormMovie h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.FormMovie .form-data {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 5px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.FormMovie .form-data label {
+  display: inline-block;
+  width: 75px;
+  margin-right: 10px;
+  text-align: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.FormMovie .form-data input:not([type="submit"]),
+.FormMovie .form-data textarea {
+  flex-grow: 1;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+.FormMovie .form-data.btn-submit {
+  justify-content: flex-end;
+}
+.FormMovie .form-data.btn-submit input {
+  background-color: rgb(168, 235, 142);
+  border-radius: 10px;
+  width: 100px;
+  padding: 5px 10px;
+  border: 1px solid rgb(168, 235, 142);
+  margin-top: 10px;
 }
